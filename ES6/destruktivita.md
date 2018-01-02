@@ -23,7 +23,7 @@ console.log(priezvisko);	// <--- 'Polka'
 Ako máte možnosť vidieť, tak sa objekt rozobral na jeho 2 premenné. Pomocou ES5 by sa to riešilo následovne. 
 
 ```javascript
-console.log(osoba.meno);		// <--- 'Ján'
+console.log(osoba.meno);	// <--- 'Ján'
 console.log(osoba.priezvisko);	// <--- 'Polka'
 ```
 
@@ -32,7 +32,7 @@ Deštrukcia dáva možnosť aj premapovanie premenných na ich aliasy [meno -> n
 ```javascript
 let {meno: name, priezvisko: surname} = osoba;
 
-console.log(name);		// <--- 'Ján'
+console.log(name);	// <--- 'Ján'
 console.log(surname);	// <--- 'Polka'
 ```
 
