@@ -1,17 +1,16 @@
 # Destruktivita v Javascripte (ES6) [Javascript destructure]
 
-Túto novú vlastnost jazyka vyuívam najcastejšie. A je aj jednou y najjednoduchších. Pomocou nej máte monost *vybrat* premenné, ktoré sa nachádzajú v `objektoch` alebo `poli`.
+TÃºto novÃº vlastnosÅ¥ jazyka vyuÅ¾Ã­vam najcastejÅ¡ie. A je aj jednou y najjednoduchÅ¡Ã­ch. Pomocou nej mÃ¡te moÅ¾nost *vybrat* premennÃ©, ktorÃ© sa nachÃ¡dzajÃº v `objektoch` alebo `poli`.
 
 ```javascript
 const osoba = {
-	meno: 'Ján',
+	meno: 'JÃ¡n',
 	priezvisko: 'Polka',
 	vek: 36
 };
+
 let {meno, priezvisko} = osoba;
 
-console.log(meno);
-// <--- 'Ján'
-console.log(priezvisko);
-// <--- 'Polka'
+console.log(meno); 			// <--- 'JÃ¡n'
+console.log(priezvisko);	// <--- 'Polka'
 ```
