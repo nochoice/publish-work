@@ -11,6 +11,6 @@ const osoba = {
 
 let {meno, priezvisko} = osoba;
 
-console.log(meno); 			// <--- 'Ján'
+console.log(meno);			// <--- 'Ján'
 console.log(priezvisko);	// <--- 'Polka'
 ```
