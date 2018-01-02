@@ -1,6 +1,6 @@
 # Destruktivita v Javascripte (ES6) [Javascript destructure]
 
-Túto novú vlastnosť jazyka využívam najcastejšie. A je aj jednou y najjednoduchších. Pomocou nej máte možnost *vybrat* premenné, ktoré sa nachádzajú v `objektoch` alebo `poliach`.
+Túto novú vlastnosť jazyka využívam najčastejšie. A je aj jednou y najjednoduchších. Pomocou nej máte možnost *vybrat* premenné, ktoré sa nachádzajú v `objektoch` alebo `poliach`. 
 
 ## Objektová deštrukcia
 
@@ -70,3 +70,16 @@ console.log(meno_2);	// <--- 'Adam'
 # Deštrukcia na poliach
 
 Deštrukciu je možné použiť aj na poliach. Za povšimnutie stojí použitie hranatých zátvoriek namiesto zložených ([] -> {})
+
+```javascript
+const pole = [1, 2, 3, 4, 5, 6];
+
+var [prvy] = pole;
+console.log(prvy);	// <--- 1
+
+var [,,treti] = pole;
+console.log(treti);	// <--- 3
+
+var [,,,,,,defaultna=100] = pole;	// Pridanie defaultnej hodnoty
+console.log(defaultna);	// <--- 100
+```
