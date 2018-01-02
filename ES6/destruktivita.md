@@ -2,6 +2,8 @@
 
 Túto novú vlastnosť jazyka využívam najcastejšie. A je aj jednou y najjednoduchších. Pomocou nej máte možnost *vybrat* premenné, ktoré sa nachádzajú v `objektoch` alebo `poliach`.
 
+## Objektová deštrukcia
+
 ```javascript
 const osoba = {
 	meno: 'Ján',
@@ -44,3 +46,27 @@ let {meno: name, adresa: {ulica: street}} = osoba;
 console.log(name);	// <--- 'Ján'
 console.log(street);	// <--- 'Prekotna'
 ```
+
+Ďaľšou peknou vlastnosťou je možnosť používať aj dynamické názvy premenných, ku ktorým je potreba sa dostať.
+
+```javascript 
+let NAZOV_PREMMENEJ = 'meno';
+let {[NAZOV_PREMMENEJ]: meno2} = osoba;
+
+console.log(meno2);	// <--- 'Ján'
+```
+
+K novo vytvorenej premennej je možné pridať aj výchoziu hodnotu v prípade, že premenná nebude namapovana, resp. vráti `undefined`.
+
+```javascript 
+let {meno='Adam'} = osoba;
+console.log(meno);	// <--- 'Ján'
+
+let {meno_2='Adam'} = osoba;	// meno_2 neexistuje na objekte osoba
+console.log(meno_2);	// <--- 'Adam'
+
+```
+
+# Deštrukcia na poliach
+
+Deštrukciu je možné použiť aj na poliach. Za povšimnutie stojí použitie hranatých zátvoriek namiesto zložených ([] -> {})
