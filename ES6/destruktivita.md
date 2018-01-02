@@ -69,7 +69,7 @@ console.log(meno_2);	// <--- 'Adam'
 
 # Deštrukcia na poliach
 
-Deštrukciu je možné použiť aj na poliach. Za povšimnutie stojí použitie hranatých zátvoriek namiesto zložených ([] -> {})
+Deštrukciu je možné použiť aj na poliach. Za povšimnutie stojí použitie hranatých zátvoriek namiesto zložených (**[] -> {}**)
 
 ```javascript
 const pole = [1, 2, 3, 4, 5, 6];
@@ -82,4 +82,20 @@ console.log(treti);	// <--- 3
 
 var [,,,,,,defaultna=100] = pole;	// Pridanie defaultnej hodnoty
 console.log(defaultna);	// <--- 100
+```
+
+# Príklady použitia
+
+Prehodenie dvoch hodnôt bez použitia ďaľšej premennej.
+
+```javascript
+let a = 1;
+let b = 2;
+
+console.log(a, b);	// <--- 1, 2
+
+[a, b] = [b, a];
+
+console.log(a, b);	// <--- 2, 1
+
 ```
